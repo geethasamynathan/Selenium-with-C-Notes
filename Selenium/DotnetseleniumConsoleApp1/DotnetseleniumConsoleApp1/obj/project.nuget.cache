@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BFxKqemkBYFDnRariVOpaucJjTz3WwDmzRRDzsV8kj98g1nyQntRdCdwdINj158WDiNXvucoDtLGiQwHlZfxNA==",
+  "success": true,
+  "projectFilePath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetseleniumConsoleApp1\\DotnetseleniumConsoleApp1\\DotnetseleniumConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\selenium.webdriver\\4.29.0\\selenium.webdriver.4.29.0.nupkg.sha512"
+  ],
+  "logs": []
+}

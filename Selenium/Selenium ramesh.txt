@@ -1,0 +1,100 @@
+Selenium
+Selenium RC 
+WebDriver
+selenium serverGrid (hub and node mechanism)
+
+locator (id,name,classname,xpath,linktext,partial linkText)
+
+
+automation test site
+
+calculator.net
+demoqa.com
+
+selenus commands ==> which commands tells what selenium does
+
+actions ==> click, type ,keyboard,mouse up,mouse down,getAttribute(textbox),GetText
+Accessor ==> values are storing in variable
+assertions ==> Verify 
+
+WebDriver ==>close () will close the active session, Quit() it will close all browser 
+
+
+driver.get("");
+
+get ==> url pass and it will wait for the next step
+
+navigate ==> url pass it wont wait it will do the next step
+
+
+FindElement
+FindElements ==>No such exception won't occur
+
+
+
+Dropdown ==>select ==> we need to use Select class
+value
+visible text
+
+
+draganddrop==>actions ==>
+
+Concept==>Testing Techniques
+Exception handling
+page object Model ==> Design pattern ==> how we design our logic
+
+for each page we will create class file ==> login page ==> 4 test case 
+dashboard ==>
+
+while we navigate different pages
+
+
+
+Parameterization using Excel
+
+how to read the value from Excel
+
+
+Logfor.NET
+logging  purpose
+
+Synchronization (implicit,explicit,fluent) wait
+
+implicit ==>thred.sleep()
+explicit wait ==> Which element specified how many seconds it will wait if we set 30 second but elemet created in 10 seconds it won't wait but in implicit wait it will wait 30 secs
+
+Fluent wait ==> same as explicit => max 60 sec => frequency(10 sec) it will check every 10 sec ==> upto 60 element not created it will throw an exception
+
+
+in selenium ==> there is no default result
+
+Framework (cucumber ,Testng)
+TestNg ==>parellel testing =>Testng ==> report 
+Annotation ==> to organise the testcase
+
+
+cucumber =>Behavioural Driven Development
+
+cherKin ==>
+
+Non-techie person can understand
+Feature file ==>Readable ==>Given ,when ,then
+step definition 
+
+(seleniumGrid ==Cross browser testing)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

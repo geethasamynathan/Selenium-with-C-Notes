@@ -1,0 +1,38 @@
+flowchart TD
+    subgraph Planning
+        A[Test Planning] --> B[Requirements Analysis]
+        B --> C[Test Strategy Development]
+    end
+    
+    subgraph Design
+        C --> D[Test Case Design]
+        D --> E[Test Data Preparation]
+        E --> F[Test Environment Setup]
+    end
+    
+    subgraph Execution
+        F --> G[Test Execution]
+        G --> H[Defect Reporting]
+        H --> I[Regression Testing]
+    end
+    
+    subgraph Analysis
+        I --> J[Test Analysis & Reporting]
+    end
+    
+    subgraph BugLife[Defect Lifecycle]
+        K[New] --> L[Assigned]
+        L --> M[Fixed]
+        M --> N[Verified]
+        N --> O[Closed]
+        M --> P[Reopened]
+        P --> L
+    end
+    
+    H -.-> K
+    
+    style Planning fill:#d4f1f9,stroke:#05386B
+    style Design fill:#d1e7dd,stroke:#05386B
+    style Execution fill:#ffe8d6,stroke:#05386B
+    style Analysis fill:#f8edeb,stroke:#05386B
+    style BugLife fill:#faedcd,stroke:#05386B
