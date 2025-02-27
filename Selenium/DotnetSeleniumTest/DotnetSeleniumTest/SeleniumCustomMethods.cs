@@ -10,38 +10,46 @@ namespace DotnetSeleniumTest
 {
     public class SeleniumCustomMethods
     {
-        public static void Click(IWebDriver driver,By locator)
+        //public static void Click(IWebDriver driver,By locator)
+        //{
+        //    driver.FindElement(locator).Click();
+        //}
+        public static void Click(IWebElement locator)
         {
-            driver.FindElement(locator).Click();
+           locator.Click();
         }
-        public static void EnterText(IWebDriver driver,By locator,string text) {
-            driver.FindElement(locator).Clear();  // clear the text from textbox
-            driver.FindElement(locator).SendKeys(text);
+        public static void Submit(IWebElement locator)
+        {
+            locator.Submit();
+        }
+        public static void EnterText(IWebElement locator,string text) {
+           locator.Clear();  // clear the text from textbox
+           locator.SendKeys(text);
         }
 
-        public static void SelectDropDownByText (IWebDriver driver,By locator,string text)
+        public static void SelectDropDownByText (IWebElement locator,string text)
         {
-           SelectElement selectElement=new SelectElement(driver.FindElement(locator)); 
+           SelectElement selectElement=new SelectElement(locator); 
            selectElement.SelectByText(text);
         }
-        public static void SelectDropDownByValue(IWebDriver driver, By locator, string value)
+        public static void SelectDropDownByValue(IWebElement locator, string value)
         {
-            SelectElement selectElement = new SelectElement(driver.FindElement(locator));
+            SelectElement selectElement = new SelectElement(locator);
             selectElement.SelectByValue(value);
         }
         
-        public static void MultiSelectElements(IWebDriver driver, By locator, string[] values)
+        public static void MultiSelectElements(IWebElement locator, string[] values)
         {
-            SelectElement multiSelect = new SelectElement(driver.FindElement(locator));
+            SelectElement multiSelect = new SelectElement(locator);
             foreach (var value in values)
             {
                 multiSelect.SelectByValue(value);
             }
         }
 
-        public static List<string> GetAllSelectedLists(IWebDriver driver,By locator) {
+        public static List<string> GetAllSelectedLists(IWebElement locator) {
             List<string> options=new List<string>();
-            SelectElement multiSelect = new SelectElement(driver.FindElement(locator));
+            SelectElement multiSelect = new SelectElement(locator);
             IList<IWebElement> selectedOption = multiSelect.AllSelectedOptions;
             foreach (var option in selectedOption)
             {
@@ -49,20 +57,20 @@ namespace DotnetSeleniumTest
             }
             return options;
         }
-        public static List<string> GetAllCheckedCheckboxes(IWebDriver driver, By locator)
-        {
-            List<string> selectedValues = new List<string>();
-            var checkboxes = driver.FindElements(locator);
+        //public static List<string> GetAllCheckedCheckboxes(IWebElement locator)
+        //{
+        //    List<string> selectedValues = new List<string>();
+        //    var checkboxes = locator;
 
-            foreach (var checkbox in checkboxes)
-            {
-                if (checkbox.Selected)  // If the checkbox is checked
-                {
-                    selectedValues.Add(checkbox.GetAttribute("value"));
-                }
-            }
-            return selectedValues;
-        }
+        //    foreach (var checkbox in checkboxes)
+        //    {
+        //        if (checkbox.Selected)  // If the checkbox is checked
+        //        {
+        //            selectedValues.Add(checkbox.GetAttribute("value"));
+        //        }
+        //    }
+        //    return selectedValues;
+        //}
 
     }
 }

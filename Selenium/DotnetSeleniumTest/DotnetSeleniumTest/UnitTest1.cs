@@ -1,5 +1,7 @@
+using DotnetSeleniumTest.Pages;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools.V131.DOM;
 using OpenQA.Selenium.Support.UI;
 
 namespace DotnetSeleniumTest
@@ -62,7 +64,15 @@ namespace DotnetSeleniumTest
             driver.Quit();
         }
 
-
+        [Test]
+        public void TestWithPOM()
+        {
+            var driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("http://eaapp.somee.com/");
+            LoginPage loginPage = new LoginPage(driver);
+            loginPage.ClickLogin();
+            loginPage.Login("admin", "password");
+        }
 
 
 

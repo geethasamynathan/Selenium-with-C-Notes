@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj": {}
+    "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj": {}
   },
   "projects": {
-    "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj": {
+    "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj",
+        "projectUniqueName": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj",
         "projectName": "DotnetSeleniumTest",
-        "projectPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj",
+        "projectPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\DotnetSeleniumTest.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\obj\\",
+        "outputPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\DotnetSeleniumTest\\DotnetSeleniumTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

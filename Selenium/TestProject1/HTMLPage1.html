@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script>
+        function showValue(inputId, labelId) {
+            document.getElementById(labelId).innerText = document.getElementById(inputId).value;
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML Controls Test Page</h1>
+
+    <!-- Text Input -->
+    <label for="textInput">Text Input:</label>
+    <input type="text" id="textInput" value="Hello Selenium">
+    <button onclick="showValue('textInput', 'textValue')">Show</button>
+    <label id="textValue"></label>
+    <br><br>
+
+    <!-- Password Input -->
+    <label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" value="password123">
+    <button onclick="showValue('passwordInput', 'passwordValue')">Show</button>
+    <label id="passwordValue"></label>
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" name="gender" id="male" value="Male"> Male
+    <input type="radio" name="gender" id="female" value="Female"> Female
+    <button onclick="showValue('male', 'radioValue')">Show</button>
+    <label id="radioValue"></label>
+    <br><br>
+
+    <!-- Checkbox -->
+    <label>Hobbies:</label>
+    <input type="checkbox" id="hobby1" value="Reading"> Reading
+    <input type="checkbox" id="hobby2" value="Traveling"> Traveling
+    <button onclick="showValue('hobby1', 'checkboxValue')">Show</button>
+    <label id="checkboxValue"></label>
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Select a Fruit:</label>
+    <select id="dropdown">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Cherry">Cherry</option>
+    </select>
+    <button onclick="showValue('dropdown', 'dropdownValue')">Show</button>
+    <label id="dropdownValue"></label>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="textarea">Comments:</label>
+    <textarea id="textarea">This is a sample text.</textarea>
+    <button onclick="showValue('textarea', 'textareaValue')">Show</button>
+    <label id="textareaValue"></label>
+    <br><br>
+
+    <!-- File Upload -->
+    <label for="fileUpload">Upload File:</label>
+    <input type="file" id="fileUpload">
+    <br><br>
+
+    <!-- Date Picker -->
+    <label for="datePicker">Select Date:</label>
+    <input type="date" id="datePicker">
+    <button onclick="showValue('datePicker', 'dateValue')">Show</button>
+    <label id="dateValue"></label>
+</body>
+</html>
