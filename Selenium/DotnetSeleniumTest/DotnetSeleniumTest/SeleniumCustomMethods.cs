@@ -57,20 +57,20 @@ namespace DotnetSeleniumTest
             }
             return options;
         }
-        //public static List<string> GetAllCheckedCheckboxes(IWebElement locator)
-        //{
-        //    List<string> selectedValues = new List<string>();
-        //    var checkboxes = locator;
+        public static List<string> GetAllCheckedCheckboxes(IWebDriver driver,IWebElement locator)
+        {
+            List<string> selectedValues = new List<string>();
+            var checkboxes = driver.FindElements((By)locator);
 
-        //    foreach (var checkbox in checkboxes)
-        //    {
-        //        if (checkbox.Selected)  // If the checkbox is checked
-        //        {
-        //            selectedValues.Add(checkbox.GetAttribute("value"));
-        //        }
-        //    }
-        //    return selectedValues;
-        //}
+            foreach (var checkbox in checkboxes)
+            {
+                if (checkbox.Selected)  // If the checkbox is checked
+                {
+                    selectedValues.Add(checkbox.GetAttribute("value"));
+                }
+            }
+            return selectedValues;
+        }
 
     }
 }

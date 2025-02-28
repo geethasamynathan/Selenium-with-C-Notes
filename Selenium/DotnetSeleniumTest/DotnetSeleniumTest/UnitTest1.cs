@@ -81,12 +81,12 @@ namespace DotnetSeleniumTest
         {
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("http://eaapp.somee.com/");
-            SeleniumCustomMethods.Click(driver, By.Id("loginLink"));
+            SeleniumCustomMethods.Click(driver.FindElement(By.Id("loginLink")));
 
             // driver.FindElement(By.Id("UserName")).SendKeys("admin");
-            SeleniumCustomMethods.EnterText(driver, By.Id("UserName"), "admin");
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("UserName")), "admin");
             // driver.FindElement(By.Id("Password")).SendKeys("password");
-            SeleniumCustomMethods.EnterText(driver, By.Id("Password"), "password");
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("Password")), "password");
 
             driver.FindElement(By.CssSelector(".btn")).Submit();
         }
@@ -95,25 +95,26 @@ namespace DotnetSeleniumTest
         public void WorkingWithAdvancedControls()
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("file:///C:/Personal/cmr_capgemini/Testing/Selenium/Testpage.html");
-            SeleniumCustomMethods.EnterText(driver, By.Id("name"), "Geetha Eswaramurthi");
-            SeleniumCustomMethods.EnterText(driver, By.Id("email"), "geethaeswaramurthi@outlook.com");
-            SeleniumCustomMethods.EnterText(driver, By.Id("doj"), "8-3-2020");
-            SeleniumCustomMethods.Click(driver, By.CssSelector("input[name='gender'][value='female']"));
+            driver.Navigate().GoToUrl("file:///C:/Personal/cmr_capgemini/Testing/Selenium-with-C-Notes/Selenium/Testpage.html");
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("name")), "Geetha Eswaramurthi");
+            
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("email")), "geethaeswaramurthi@outlook.com");
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("doj")), "8-3-2020");
+            SeleniumCustomMethods.Click(driver.FindElement(By.CssSelector("input[name='gender'][value='female']")));
 
-            SeleniumCustomMethods.SelectDropDownByText(driver, By.Id("city"), "Coimbatore");
-            SeleniumCustomMethods.EnterText(driver, By.Id("designation"), "Senior Product Engineer");
+            SeleniumCustomMethods.SelectDropDownByText(driver.FindElement(By.Id("city")), "Coimbatore");
+            SeleniumCustomMethods.EnterText(driver.FindElement(By.Id("designation")), "Senior Product Engineer");
 
-            SeleniumCustomMethods.MultiSelectElements(driver, By.Id("skills"), ["testing", "cloud"]);
-            var getSelectedOptions = SeleniumCustomMethods.GetAllSelectedLists(driver, By.Id("skills"));
+            SeleniumCustomMethods.MultiSelectElements(driver.FindElement(By.Id("skills")), ["testing", "cloud"]);
+            var getSelectedOptions = SeleniumCustomMethods.GetAllSelectedLists(driver.FindElement(By.Id("skills")));
 
             getSelectedOptions.ForEach(Console.WriteLine);
-            SeleniumCustomMethods.Click(driver, By.CssSelector("input[name='hobbies'][value='Reading Books']"));
-            SeleniumCustomMethods.Click(driver, By.CssSelector("input[name='hobbies'][value='Playing Baseball']"));
-            var getSelectedHobbies = SeleniumCustomMethods.GetAllCheckedCheckboxes(driver, By.Name("hobbies"));
+            SeleniumCustomMethods.Click(driver.FindElement(By.CssSelector("input[name='hobbies'][value='Reading Books']")));
+            SeleniumCustomMethods.Click(driver.FindElement(By.CssSelector("input[name='hobbies'][value='Playing Baseball']")));
+            var getSelectedHobbies = SeleniumCustomMethods.GetAllCheckedCheckboxes(driver,driver.FindElement(By.Name("hobbies")));
             getSelectedHobbies.ForEach(Console.WriteLine);
             // Clicking the Register Button
-            SeleniumCustomMethods.Click(driver, By.CssSelector("button[type='submit']"));
+            SeleniumCustomMethods.Click(driver.FindElement(By.CssSelector("button[type='submit']")));
 
             // Validation: Ensure form submission redirects to a success page or displays a confirmation message
             Thread.Sleep(2000);  // Wait for form submission response

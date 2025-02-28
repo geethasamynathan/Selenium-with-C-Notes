@@ -1090,11 +1090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\SeleniumTestProject\\SeleniumTestProject\\SeleniumTestProject.csproj",
+      "projectUniqueName": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\SeleniumTestProject\\SeleniumTestProject.csproj",
       "projectName": "SeleniumTestProject",
-      "projectPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\SeleniumTestProject\\SeleniumTestProject\\SeleniumTestProject.csproj",
+      "projectPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\SeleniumTestProject\\SeleniumTestProject.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium\\SeleniumTestProject\\SeleniumTestProject\\obj\\",
+      "outputPath": "C:\\Personal\\cmr_capgemini\\Testing\\Selenium-with-C-Notes\\Selenium\\SeleniumTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
